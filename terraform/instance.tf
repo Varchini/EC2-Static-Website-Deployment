@@ -1,4 +1,4 @@
-resource "aws_instance" "web02" {
+resource "aws_instance" "web01" {
 
   ami                    = var.amiID[var.region]
   instance_type          = "t3.micro"
@@ -8,7 +8,7 @@ resource "aws_instance" "web02" {
 
 
   tags = {
-    Name    = "webserver02"
+    Name    = "webserver01"
     Project = "Dev"
   }
 
@@ -35,7 +35,7 @@ resource "aws_instance" "web02" {
     }
   }
   provisioner "local-exec" {
-    command = "echo ${aws_instance.web02.public_ip} >> public_ip.txt"
+    command = "echo ${aws_instance.web01.public_ip} >> public_ip.txt"
 
   }
 }
@@ -43,11 +43,12 @@ resource "aws_instance" "web02" {
 
 
 resource "aws_ec2_instance_state" "vmstatus" {
-  instance_id = aws_instance.web02.id
+  instance_id = aws_instance.web01.id
   state       = "stopped"
 }
 
 output "private_IP" {
-  description = "private IP address of the web02 server"
-  value       = aws_instance.web02.private_ip
+  description = "private IP address of the web01 server"
+  value       = aws_instance.web01.private_ip
 }
+
