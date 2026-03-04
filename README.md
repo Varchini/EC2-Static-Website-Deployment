@@ -62,15 +62,15 @@ User → Internet → Security Group → EC2 → Apache → Static Website
 
 3. Initialize Terraform
    
-  cmd: terraform init
+    cmd: terraform init
 
 4. Plan the Infrastructure
    
-  cmd: terraform plan
+    cmd: terraform plan
 
 5. Apply the Configuration
    
-  cmd: terraform apply
+    cmd: terraform apply
 
 After successful deployment, Terraform will output the public IP.
 
@@ -78,7 +78,7 @@ After successful deployment, Terraform will output the public IP.
 
 Open your browser and enter:
 
-http://<public-ip>
+http://public-ip
 
 You should see your deployed static website.
 
