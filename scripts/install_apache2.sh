@@ -1,12 +1,9 @@
 #!/bin/bash
 apt update
-apt install apache2 wget unzip -y
+apt install wget unzip apache2 -y
 systemctl start apache2
 systemctl enable apache2
-
-cd /tmp/
-wget https://www.tooplate.com/zip-templates/2156_graphite_creative.zip
-unzip 2156_graphite_creative.zip
-cp -r 2156_graphite_creative/* /var/www/html/
-
+wget https://www.tooplate.com/zip-templates/2155_modern_musician.zip
+unzip -o 2155_modern_musician.zip
+cp -r 2155_modern_musician/* /var/www/html/
 systemctl restart apache2
