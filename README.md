@@ -20,32 +20,32 @@ User → Internet → Security Group (Port 80 Open) → EC2 Instance → Apache 
 
 - Git & GitHub
 
-⚙️ What This Project Does
+**⚙️ What This Project Does**
 
-Creates a Security Group allowing HTTP (Port 80)
+- Creates a Security Group allowing HTTP (Port 80)
 
-Launches an EC2 instance
+- Launches an EC2 instance
 
-Installs Apache automatically using user_data
+- Installs Apache automatically using user_data
 
-Deploys a static website
+- Deploys a static website
 
-Outputs the public IP of the instance
+- Outputs the public IP of the instance
 
-🚀 Deployment Steps
-1️⃣ Clone the Repository
+**🚀 Deployment Steps**
+1️. Clone the Repository
 git clone https://github.com/your-username/ec2-static-website-terraform.git
 cd ec2-static-website-terraform/terraform
-2️⃣ Initialize Terraform
+2️. Initialize Terraform
 terraform init
-3️⃣ Plan the Infrastructure
+3️. Plan the Infrastructure
 terraform plan
-4️⃣ Apply the Configuration
+4️. Apply the Configuration
 terraform apply
 
 After successful deployment, Terraform will output the public IP.
 
-🌐 Access the Website
+**🌐 Access the Website**
 
 Open your browser and enter:
 
@@ -53,7 +53,7 @@ http://<public-ip>
 
 You should see your deployed static website.
 
-🔐 Security Configuration
+**🔐 Security Configuration**
 
 Security Group allows:
 
