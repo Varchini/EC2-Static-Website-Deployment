@@ -78,7 +78,7 @@ After successful deployment, Terraform will output the public IP.
 
 Open your browser and enter:
 
-http://public-ip
+http://<public_ip>
 
 You should see your deployed static website.
 
