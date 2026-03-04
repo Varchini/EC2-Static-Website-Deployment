@@ -44,13 +44,22 @@ S3 Bucket (State / Storage)
 git clone https://github.com/your-username/ec2-static-website-terraform.git
 cd ec2-static-website-terraform/terraform
 
-2️. Initialize Terraform
+2.generate public & private key
+
+cmd: ssh-keygen
+provide the file_name
+
+usage:
+Private key → Used by Terraform for SSH connection
+Public key → Uploaded to EC2 (via key pair)
+
+3. Initialize Terraform
 terraform init
 
-3️. Plan the Infrastructure
+4. Plan the Infrastructure
 terraform plan
 
-4️. Apply the Configuration
+5. Apply the Configuration
 terraform apply
 
 After successful deployment, Terraform will output the public IP.
