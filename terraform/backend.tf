@@ -1,8 +1,9 @@
 terraform {
   backend "s3" {
-    bucket = "terraformstatefile2026"
+    bucket = "staticwebsite20266"
     key    = "statefile/backend"
     region = "us-east-1"
 
   }
+
 }
