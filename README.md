@@ -1,24 +1,24 @@
-##📌 Project Overview
+**📌 Project Overview**
 
 This project demonstrates how to provision an EC2 instance using Amazon EC2 and deploy a static website using Apache HTTP Server, fully automated with Terraform.
 
 The infrastructure is created as code and the web server installation is automated using a user data script.
 
-##🏗 Architecture
+**🏗 Architecture**
 
 User → Internet → Security Group (Port 80 Open) → EC2 Instance → Apache → Static Website
 
-🛠 Tech Stack
+**🛠 Tech Stack**
 
-AWS
+- AWS
 
-Terraform
+- Terraform
 
-Linux (Amazon Linux)
+- Linux (Amazon Linux)
 
-Apache HTTP Server
+- Apache HTTP Server
 
-Git & GitHub
+- Git & GitHub
 
 ⚙️ What This Project Does
 
