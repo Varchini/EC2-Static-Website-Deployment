@@ -1,7 +1,12 @@
-# EC2-Static-Website-Deployment
+📌 Project Overview
+
+This project demonstrates how to provision an EC2 instance using Amazon EC2 and deploy a static website using Apache HTTP Server, fully automated with Terraform.
+
+The infrastructure is created as code and the web server installation is automated using a user data script.
+
 🏗 Architecture
 
-User → Internet → Security Group (Port 80) → EC2 → Apache → Static Website
+User → Internet → Security Group (Port 80 Open) → EC2 Instance → Apache → Static Website
 
 🛠 Tech Stack
 
@@ -9,20 +14,73 @@ AWS
 
 Terraform
 
-Linux
+Linux (Amazon Linux)
 
-Apache
+Apache HTTP Server
 
-GitHub
+Git & GitHub
 
-⚙️ Deployment Steps
+📂 Project Structure
+ec2-static-website-terraform/
+│
+├── terraform/
+│   ├── main.tf
+│   ├── variables.tf
+│   ├── outputs.tf
+│   └── provider.tf
+│
+├── scripts/
+│   └── user_data.sh
+│
+├── website/
+│   ├── index.html
+│   └── style.css
+│
+├── architecture/
+│   └── architecture-diagram.png
+│
+└── README.md
+⚙️ What This Project Does
 
+Creates a Security Group allowing HTTP (Port 80)
+
+Launches an EC2 instance
+
+Installs Apache automatically using user_data
+
+Deploys a static website
+
+Outputs the public IP of the instance
+
+🚀 Deployment Steps
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/ec2-static-website-terraform.git
+cd ec2-static-website-terraform/terraform
+2️⃣ Initialize Terraform
 terraform init
+3️⃣ Plan the Infrastructure
 terraform plan
+4️⃣ Apply the Configuration
 terraform apply
 
-🌐 Output
+After successful deployment, Terraform will output the public IP.
 
-After deployment:
+🌐 Access the Website
+
+Open your browser and enter:
 
 http://<public-ip>
+
+You should see your deployed static website.
+
+🔐 Security Configuration
+
+Security Group allows:
+
+Port 22 (SSH)
+
+Port 80 (HTTP)
+
+EC2 instance launched inside default VPC
+
+Key pair used for secure SSH access
