@@ -40,7 +40,7 @@ User → Internet → Security Group → EC2 → Apache → Static Website
 
 1️. Clone the Repository
 
-- git clone https://github.com/your-username/ec2-static-website-terraform.git
+- git clone <repo_url>
   
 - open git bash and run below cmd
   
