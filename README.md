@@ -7,8 +7,6 @@ The infrastructure is created as code and the web server installation is automat
 **🏗 Architecture**
 
 User → Internet → Security Group → EC2 → Apache → Static Website
-↓
-S3 Bucket (State / Storage)
 
 **🛠 Tech Stack**
 
