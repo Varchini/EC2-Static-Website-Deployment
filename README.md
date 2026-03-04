@@ -33,13 +33,17 @@ User → Internet → Security Group (Port 80 Open) → EC2 Instance → Apache 
 - Outputs the public IP of the instance
 
 **🚀 Deployment Steps**
+
 1️. Clone the Repository
 git clone https://github.com/your-username/ec2-static-website-terraform.git
 cd ec2-static-website-terraform/terraform
+
 2️. Initialize Terraform
 terraform init
+
 3️. Plan the Infrastructure
 terraform plan
+
 4️. Apply the Configuration
 terraform apply
 
