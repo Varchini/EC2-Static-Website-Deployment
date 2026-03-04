@@ -16,9 +16,11 @@ Apache
 GitHub
 
 ⚙️ Deployment Steps
+
 terraform init
 terraform plan
 terraform apply
+
 🌐 Output
 
 After deployment:
