@@ -14,7 +14,7 @@ User → Internet → Security Group → EC2 → Apache → Static Website
 
 - Terraform
 
-- Linux (Amazon Linux)
+- ubuntu
 
 - Apache HTTP Server
 
