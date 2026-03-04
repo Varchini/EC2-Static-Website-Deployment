@@ -48,21 +48,26 @@ User → Internet → Security Group → EC2 → Apache → Static Website
 
 2.Generate Public & Private key
 
-cmd: ssh-keygen
-provide the file_name
+- cmd: ssh-keygen
+  provide the file_name
 
-usage:
-Private key → Used by Terraform for SSH connection
-Public key → Uploaded to EC2 (via key pair)
+- usage:
+  
+  Private key → Used by Terraform for SSH connection
+
+  Public key → Uploaded to EC2 (via key pair)
 
 3. Initialize Terraform
-terraform init
+   
+cmd: terraform init
 
-4. Plan the Infrastructure
-terraform plan
+5. Plan the Infrastructure
+   
+cmd: terraform plan
 
-5. Apply the Configuration
-terraform apply
+7. Apply the Configuration
+   
+cmd: terraform apply
 
 After successful deployment, Terraform will output the public IP.
 
