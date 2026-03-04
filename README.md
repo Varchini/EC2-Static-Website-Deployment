@@ -82,14 +82,3 @@ http://<public_ip>
 
 You should see your deployed static website.
 
-**🔐 Security Configuration**
-
-Security Group allows:
-
-Port 22 (SSH)
-
-Port 80 (HTTP)
-
-EC2 instance launched inside default VPC
-
-Key pair used for secure SSH access
