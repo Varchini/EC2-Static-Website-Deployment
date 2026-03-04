@@ -20,26 +20,6 @@ Apache HTTP Server
 
 Git & GitHub
 
-📂 Project Structure
-ec2-static-website-terraform/
-│
-├── terraform/
-│   ├── main.tf
-│   ├── variables.tf
-│   ├── outputs.tf
-│   └── provider.tf
-│
-├── scripts/
-│   └── user_data.sh
-│
-├── website/
-│   ├── index.html
-│   └── style.css
-│
-├── architecture/
-│   └── architecture-diagram.png
-│
-└── README.md
 ⚙️ What This Project Does
 
 Creates a Security Group allowing HTTP (Port 80)
