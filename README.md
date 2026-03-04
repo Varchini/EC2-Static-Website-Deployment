@@ -6,7 +6,9 @@ The infrastructure is created as code and the web server installation is automat
 
 **🏗 Architecture**
 
-User → Internet → Security Group (Port 80 Open) → EC2 Instance → Apache → Static Website
+User → Internet → Security Group → EC2 → Apache → Static Website
+↓
+S3 Bucket (State / Storage)
 
 **🛠 Tech Stack**
 
@@ -18,7 +20,9 @@ User → Internet → Security Group (Port 80 Open) → EC2 Instance → Apache 
 
 - Apache HTTP Server
 
-- Git & GitHub
+- GitHub
+
+-s3 bucket 
 
 **⚙️ What This Project Does**
 
@@ -26,7 +30,9 @@ User → Internet → Security Group (Port 80 Open) → EC2 Instance → Apache 
 
 - Launches an EC2 instance
 
-- Installs Apache automatically using user_data
+- Create Amazon S3 bucket
+
+-   Installs Apache automatically using user_data
 
 - Deploys a static website
 
