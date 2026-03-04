@@ -49,7 +49,10 @@ User → Internet → Security Group → EC2 → Apache → Static Website
 2.Generate Public & Private key
 
 - cmd: ssh-keygen
-  provide the file_name
+  
+    provide the file_name
+
+    output: provide 2 files (public key & private key)
 
 - usage:
   
