@@ -44,7 +44,7 @@ User → Internet → Security Group → EC2 → Apache → Static Website
   
 - open git bash and run below cmd
   
-cmd: cd ec2-static-website-terraform/terraform
+  cmd: cd ec2-static-website-terraform/terraform
 
 2.Generate Public & Private key
 
