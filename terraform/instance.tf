@@ -44,11 +44,12 @@ resource "aws_instance" "web01" {
 
 resource "aws_ec2_instance_state" "vmstatus" {
   instance_id = aws_instance.web01.id
-  state       = "stopped"
+  state       = "running"
 }
 
 output "private_IP" {
   description = "private IP address of the web01 server"
   value       = aws_instance.web01.private_ip
 }
+
 
