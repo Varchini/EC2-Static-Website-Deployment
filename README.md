@@ -30,7 +30,7 @@ User → Internet → Security Group → EC2 → Apache → Static Website
 
 - Create Amazon S3 bucket
 
-- Installs Apache automatically using user_data
+- Installs Apache automatically using web.sh
 
 - Deploys a static website
 
