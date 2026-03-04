@@ -52,7 +52,7 @@ User → Internet → Security Group → EC2 → Apache → Static Website
   
     provide the file_name
 
-    output: provide 2 files (public key & private key)
+    output: get 2 files (public key & private key)
 
 - usage:
   
