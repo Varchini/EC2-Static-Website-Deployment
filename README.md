@@ -39,9 +39,11 @@ User → Internet → Security Group → EC2 → Apache → Static Website
 **🚀 Deployment Steps**
 
 1️. Clone the Repository
-git clone https://github.com/your-username/ec2-static-website-terraform.git
 
-open git bash and run below cmd
+- git clone https://github.com/your-username/ec2-static-website-terraform.git
+  
+- open git bash and run below cmd
+  
 cmd: cd ec2-static-website-terraform/terraform
 
 2.Generate Public & Private key
