@@ -22,7 +22,7 @@ S3 Bucket (State / Storage)
 
 - GitHub
 
--s3 bucket 
+- s3 bucket 
 
 **⚙️ What This Project Does**
 
@@ -32,7 +32,7 @@ S3 Bucket (State / Storage)
 
 - Create Amazon S3 bucket
 
--   Installs Apache automatically using user_data
+- Installs Apache automatically using user_data
 
 - Deploys a static website
 
@@ -42,9 +42,11 @@ S3 Bucket (State / Storage)
 
 1️. Clone the Repository
 git clone https://github.com/your-username/ec2-static-website-terraform.git
-cd ec2-static-website-terraform/terraform
 
-2.generate public & private key
+open git bash and run below cmd
+cmd: cd ec2-static-website-terraform/terraform
+
+2.Generate Public & Private key
 
 cmd: ssh-keygen
 provide the file_name
